@@ -1,8 +1,11 @@
 import './App.css';
+import Habibi from './components/Habibi';
 
 function App() {
   return (
-    <h1>Start</h1>
+  <main>
+    <Habibi></Habibi>
+  </main>
   );
 }
 

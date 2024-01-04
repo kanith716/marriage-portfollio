@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Noto+Kufi+Arabic:wght@300;400;500;600;700&family=Sail&display=swap');
+
+:root {
+/* // fonts */
+--base-font-size: 15;
+--base-font: 'Jost', sans-serif;
+--heading-font: 'Sail', cursive;
+
+
+
+/* // color */
+--dark-gray: #101010;
+--body-color: #5C5C5C;
+--white: #fff;
+--light: #8188a9;
+--black: #000;
+--small-black: #333;
+--cyan: #848892;
+
+--theme-primary-color: #657150;
+--theme-primary-color-s2: #C8A898;
+--theme-primary-color-s3: #A5AA9C;
+--theme-primary-color-s4: #E5D1C7;
+--body-bg-color: #fff;
+--section-bg-color: #FCFDFA;
+--section-bg-color-s2: #FAF2EE;
+--section-bg-color-s3: #F1F3EE;
+--section-bg-color-s4: #F5F5F5;
+--text-color: #5C5C5C;
+--text-light-color: #7b7b7b;
+--heading-color: --dark-gray;
+--heading-color2: #3F3F3F;
+--border-color: #F3ECE9;
+--border-color-s2: #e4ebf2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Base Start */
+@layer base {
+  body {
+    @apply font-[var(--base-font)] text-[var--(body-color)] text-[18px] 
+  }
+  p{
+    @apply text-[18px] text-[var--(body-color)] leading-[1.8em]
+  }
+  h1{
+    font-family: 'Sail',cursive;
+  }
+  .head-font{
+      font-family: 'Sail', cursive;
+  }
+  .body-color{
+    color: #5c5c5c;
+  }
+
+     h1,
+     h2,
+     h3,
+     h4,
+     h5,
+     h6 {
+       @apply text-[var--(heading-color)] text-[--var(heading-font)] font-normal;
+     }
+
+     ul{
+      @apply pl-0 
+     }
+     /* a{
+      @apply text-decoration-none
+     } */
+
+     img{
+      @apply max-w-[100%]
+     }
+     .round-image{
+      background-image: url(../public/image/date-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 300px;
+     }
 }
+/* Base End */
+
