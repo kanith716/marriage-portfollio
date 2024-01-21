@@ -41,7 +41,7 @@ function DayCount() {
                   <div className='text-center round-image p-10 col-span-2 md:col-span-1'>
                       <div>
                           <h2 className='leading-[40px] md:leading-[130px] text-[40px] md:text-[100px] head-font text-[var(--theme-primary-color)] ' id='hoursset'>0</h2>
-                          <span className='text-[var(--theme-primary-color)] text-[30px]'>Month</span>
+                          <span className='text-[var(--theme-primary-color)] text-[30px]'>Hours</span>
                       </div>
                   </div>
                   <div className='text-center round-image p-10 col-span-2 md:col-span-1'>
