@@ -2,7 +2,7 @@ import React from 'react'
 
 function Story() {
   return (
-      <section className='md:h-[100vh] md:flex items-center  md:py-[20vh]'>
+      <section className='md:min-h-[100vh] md:flex items-center py-[5vh]  md:py-[10vh] px-5'>
           <div className='container mx-auto'>
             <div className='md:grid grid-cols-3 gap-4'>
                   <div>

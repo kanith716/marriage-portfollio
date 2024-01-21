@@ -2,8 +2,8 @@ import React from 'react'
 
 function HotItWorks() {
   return (
-    <div className='overflow-hidden'>
-      <section className='md:h-[100vh] md:flex items-center bg-[var(--section-bg-color-s3)] relative'>
+    <div className='overflow-hidden '>
+          <section className='md:h-[100vh] px-5 md:flex items-center bg-[var(--section-bg-color-s3)] relative'>
           <div className='container mx-auto'> 
             <div className='text-center pt-[8vh] md:pt-[20vh] pb-10'>
                   <p className='text-[var(--theme-primary-color-s2)] font-semibold'>Our Story</p>
@@ -11,7 +11,7 @@ function HotItWorks() {
             </div>
             <div className='md:grid grid-cols-2 gap-4 pt-10'>
                   <div>
-                    <div className='relative z-10'>
+                    <div className='relative z-10 pb-10 md:pb-0'>
                               <img src='/image/1.jpg' className='mx-auto border-[15px] border-white w-[70%] md:w-[auto]'></img>
                           <div className='absolute top-[-50px] right-[-110px] z-[-1]'>
                                   <img src="/image/shape-1.png" className='w-[80%] '></img>
@@ -38,7 +38,7 @@ function HotItWorks() {
         <section className='h-[100vh] flex items-center bg-[var(--section-bg-color-s3)] relative'>
           <div className='container mx-auto'> 
             <div className='md:grid grid-cols-2 gap-4 pt-10'>
-                  <div className='self-center'>
+                      <div className='self-center pb-10 md:pb-0'>
                           <div className='md:w-[70%] text-center md:text-right'>
                           <p className='text-[var(--theme-primary-color-s2)] font-semibold'>12 Dec 2019</p>
                               <h3 className='text-[40px] head-font'>He proposed, I said yes</h3>
@@ -66,7 +66,7 @@ function HotItWorks() {
                  
                   <div className='md:grid grid-cols-2 gap-4 '>
                       <div>
-                          <div className='relative z-10'>
+                          <div className='relative z-10 pb-10 md:pb-0'>
                               <img src='/image/3.jpg' className='mx-auto border-[15px] border-white w-[70%] md:w-[50%]'></img>
                               <div className='absolute top-[-50px] right-[-110px] z-[-1]'>
                                   <img src="/image/shape6.png" className='w-[75%]'></img>

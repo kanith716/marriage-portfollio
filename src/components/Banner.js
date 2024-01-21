@@ -39,7 +39,7 @@ function Banner() {
               </div>
               <div className='pt-8'>
                 <h1 className=' md:text-[60px] text-[30px]'>Raja & Harini</h1>
-                <p className='text-[var(--body-color)] font-semibold'>We Are Getting Married November 15,2024</p>
+                <p className='text-[var(--body-color)] font-semibold'>We Are Getting Married February 11,2024</p>
               </div>
               <div className='grid grid-cols-4 mx-auto w-[80%] pt-5'>
                 <div>

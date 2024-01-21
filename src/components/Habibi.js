@@ -8,11 +8,11 @@ import Footer from './Footer';
 
 function Habibi() {
   return (
-    <div>
+    <div className='md:overflow-auto overflow-x-hidden'>
       <Banner></Banner>
       <DayCount></DayCount>
       <MarriageBanner></MarriageBanner>
-      <Story></Story>
+            <Story></Story>
       <HotItWorks></HotItWorks>
 
       {/* <Footer></Footer> */}

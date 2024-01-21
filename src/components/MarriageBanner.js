@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 function MarriageBanner() {
   return (
-      <section className='md:h-[100vh] md:flex items-center py-[10vh]'>
+      <section className='md:h-[100vh] md:flex items-center py-[10vh] px-10'>
         <div className='container mx-auto'>
             <div className='md:grid grid-cols-12'>
                   <div className='col-span-3 self-center'>
