@@ -85,6 +85,14 @@
       background-size: contain;
       height: 300px;
      }
+     /* .clip-img{
+      clip-path: polygon(0 24%, 50% 0, 100% 24%, 100% 76%, 49% 100%, 0 76%);
+     } */
+     @media (max-width:767px) {
+        .round-image {
+          height: 220px;
+        }
+     }
 }
 /* Base End */
 

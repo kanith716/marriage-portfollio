@@ -4,6 +4,7 @@ import DayCount from './DayCount';
 import MarriageBanner from './MarriageBanner';
 import Story from './Story';
 import HotItWorks from './HotItWorks';
+import Footer from './Footer';
 
 function Habibi() {
   return (
@@ -11,8 +12,10 @@ function Habibi() {
       <Banner></Banner>
       <DayCount></DayCount>
       <MarriageBanner></MarriageBanner>
-      <HotItWorks></HotItWorks>
       <Story></Story>
+      <HotItWorks></HotItWorks>
+
+      {/* <Footer></Footer> */}
     </div>
   )
 }
