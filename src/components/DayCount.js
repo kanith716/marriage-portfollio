@@ -1,33 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
-var targetDateNew = new Date('February 11, 2024 00:00:00').getTime();
 
-// Update the countdown every second
-setInterval(storyCall, 1000);
-
-function storyCall() {
-    
-    var nowStory = new Date().getTime();
-    var timeRemainingEle = targetDateNew - nowStory;
-
-
-    // Calculate days, hours, minutes, and seconds
-    var daysset = Math.floor(timeRemainingEle / (1000 * 60 * 60 * 24));
-    var hoursset = Math.floor((timeRemainingEle % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutesset = Math.floor((timeRemainingEle % (1000 * 60 * 60)) / (1000 * 60));
-    var secondsset = Math.floor((timeRemainingEle % (1000 * 60)) / 1000);
-    
-
-    // Display the countdown in the #countdown element
-    document.getElementById('daysset').innerHTML = daysset;
-    document.getElementById('hoursset').innerHTML = hoursset;
-    document.getElementById('minutesset').innerHTML = minutesset;
-    document.getElementById('secondsset').innerHTML = secondsset;
-
-}
 
 function DayCount() {
+    useEffect(()=>{
+        var targetDateNew = new Date('February 11, 2024 00:00:00').getTime();
+
+        // Update the countdown every second
+        setInterval(storyCall, 1000);
+
+        function storyCall() {
+
+            var nowStory = new Date().getTime();
+            var timeRemainingEle = targetDateNew - nowStory;
+
+
+            // Calculate days, hours, minutes, and seconds
+            var daysset = Math.floor(timeRemainingEle / (1000 * 60 * 60 * 24));
+            var hoursset = Math.floor((timeRemainingEle % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutesset = Math.floor((timeRemainingEle % (1000 * 60 * 60)) / (1000 * 60));
+            var secondsset = Math.floor((timeRemainingEle % (1000 * 60)) / 1000);
+
+
+            // Display the countdown in the #countdown element
+            document.getElementById('daysset').innerHTML = daysset;
+            document.getElementById('hoursset').innerHTML = hoursset;
+            document.getElementById('minutesset').innerHTML = minutesset;
+            document.getElementById('secondsset').innerHTML = secondsset;
+
+        }
+    }, [DayCount])
   return (
       <section className='md:h-[100vh] md:flex items-center pt-[20vh] md:pt-0'>
         <div className='container mx-auto'>

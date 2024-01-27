@@ -1,30 +1,33 @@
-import React from 'react'
-
-const targetDate = new Date('February 11, 2024 00:00:00').getTime();
-
-// Update the countdown every second
-setInterval(updateCountdown, 1000);
-
-function updateCountdown() {
-  const now = new Date().getTime();
-  const timeRemaining = targetDate - now;
+import React, { useEffect } from 'react'
 
 
-  // Calculate days, hours, minutes, and seconds
-  var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-  // Display the countdown in the #countdown element
-  document.getElementById('days').innerHTML = days;
-  document.getElementById('hours').innerHTML = hours;
-  document.getElementById('minutes').innerHTML = minutes;
-  document.getElementById('seconds').innerHTML = seconds;
-
-}
 function Banner() {
 
+  useEffect(()=> {
+    const targetDate = new Date('February 11, 2024 00:00:00').getTime();
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const timeRemaining = targetDate - now;
+
+
+      // Calculate days, hours, minutes, and seconds
+      var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+      // Display the countdown in the #countdown element
+      document.getElementById('days').innerHTML = days;
+      document.getElementById('hours').innerHTML = hours;
+      document.getElementById('minutes').innerHTML = minutes;
+      document.getElementById('seconds').innerHTML = seconds;
+
+    }
+  }, [Banner])
   // Set the target date for the countdown (February 11)
 
 

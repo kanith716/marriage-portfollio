@@ -85,6 +85,12 @@
       background-size: contain;
       height: 300px;
      }
+     .inv-sec{
+          background-image: url(../public/image/invitation-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+     }
      /* .clip-img{
       clip-path: polygon(0 24%, 50% 0, 100% 24%, 100% 76%, 49% 100%, 0 76%);
      } */
