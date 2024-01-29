@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { CiHeart } from "react-icons/ci";
+import { IoHeartHalf } from "react-icons/io5";
+
 
 
 
@@ -55,7 +57,7 @@ function Invitation() {
                           <div className='text-center pt-[10vh] md:pt-[15vh]'>
                               {/* <p className='text-[17px] md:text-[21px]  font-normal '>Destiny brought them together</p>
                               <p className='text-[17px] md:text-[21px]  font-normal'>  and now love will seal their bond... forever</p>                                                */}
-                              <h1 className='md:text-[70px] text-[35px]'><span className='inline-block me-2'>Raja</span> <CiHeart className='text-[25px] md:text-[45px] inline-block' /> Harini</h1>
+                              <h1 className='md:text-[70px] text-[35px]'><span className='inline-block me-2'>Raja</span> <IoHeartHalf className='text-[25px] md:text-[55px] inline-block' /> Harini</h1>
                               <p className=' text-[16px] md:text-[18px]'>We invite you to celebrate this Special Day</p>
                               <p className='pb-3 text-[16px] md:text-[18px]'> and the First day in our life together</p>
                               <img alt='flower ' src='/image/yellow-flower.png' className='mx-auto'></img>
