@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-
+import { CiHeart } from "react-icons/ci";
 
 
 
@@ -45,17 +45,17 @@ function Invitation() {
         <div className='container mx-auto p-3 md:p-10 '>
               <div className='bg-white p-[5vw]'>
                   <div className='border-solid border border-lime-600 p-3'>
-                      <div className='border-solid border border-lime-600 md:p-10'>
-                          <div className='pt-5 md:pt-[10vh] relative px-10'>
+                      <div className='border-solid border border-lime-600  md:p-10'>
+                          <div className='pt-10 md:pt-5 md:pt-[10vh] relative px-10'>
                               <img src='/image/in-1.jpg' className='md:w-6/12 rounded-full mx-auto' alt='couple image'></img>
                               <div className='absolute bottom-[-50px] translate-x-[-50%] left-[50%] w-full md:w-auto'>
                                 <img alt='couple flower' src='/image/couple-flower.png' className='mx-auto   md:w-11/12'></img>
                               </div>
                           </div>
-                          <div className='text-center pt-[15vh]'>
+                          <div className='text-center pt-[10vh] md:pt-[15vh]'>
                               {/* <p className='text-[17px] md:text-[21px]  font-normal '>Destiny brought them together</p>
                               <p className='text-[17px] md:text-[21px]  font-normal'>  and now love will seal their bond... forever</p>                                                */}
-                              <h1 className='md:text-[70px] text-[35px]'>Raja & Harini</h1>
+                              <h1 className='md:text-[70px] text-[35px]'><span className='inline-block me-2'>Raja</span> <CiHeart className='text-[25px] md:text-[45px] inline-block' /> Harini</h1>
                               <p className=' text-[16px] md:text-[18px]'>We invite you to celebrate this Special Day</p>
                               <p className='pb-3 text-[16px] md:text-[18px]'> and the First day in our life together</p>
                               <img alt='flower ' src='/image/yellow-flower.png' className='mx-auto'></img>
@@ -87,26 +87,26 @@ function Invitation() {
                               </div>
                           </div>
                           <div className='text-center pt-10'>
-                              <p className='text-[17px] md:text-[20px]'><span className='text-[var(--theme-primary-color-s3)]'>Reception:</span> 10.02.2024, Saturday</p>
-                              <p className='text-[17px] md:text-[20px]'><span className='text-[var(--theme-primary-color-s3)]'>Time:</span> Evening 7&#039;o clock </p>
+                              <p className='text-[17px] md:text-[20px]'><span className='text-[#95998d]'>Reception:</span> 10.02.2024, Saturday</p>
+                              <p className='text-[17px] md:text-[20px]'><span className='text-[#95998d]'>Time:</span> Evening 7&#039;o clock </p>
                           </div>
                           <div className='text-center pt-5'>
                           
-                              <p className='text-[17px] md:text-[20px]'><span className='text-[var(--theme-primary-color-s3)]'>DJ:</span> Evening 7&#039;0 Clock</p>
+                              <p className='text-[17px] md:text-[20px]'><span className='text-[#95998d]'>DJ:</span> Evening 7&#039;0 Clock</p>
                           </div>
                           <div className='text-center pt-5'>
-                              <p className='text-[17px] md:text-[20px]'><span className='text-[var(--theme-primary-color-s3)]'>Marriage:</span> 11.02.2024, Sunday</p>
-                              <p className='text-[17px] md:text-[20px]'><span className='text-[var(--theme-primary-color-s3)]'>Time:</span> Morning 8-9.30 </p>
+                              <p className='text-[17px] md:text-[20px]'><span className='text-[#95998d]'>Marriage:</span> 11.02.2024, Sunday</p>
+                              <p className='text-[17px] md:text-[20px]'><span className='text-[#95998d]'>Time:</span> Morning 8-9.30 </p>
                           </div>
                           <div className='text-center pt-5 md:w-7/12 mx-auto'>
-                              <p className='text-[17px] md:text-[20px]'><span className='text-[var(--theme-primary-color-s4)]'>Venue:</span></p>
-                              <p className='text-[17px] md:text-[20px] px-3'>Vaithialingam Palace A/c Thirumana Mandapam, No.17, Murugan Koil Main Raod, Sammantham Nagar, Kundrathur, Chennai - 600 069.</p>
+                              <p className='text-[17px] md:text-[20px]'><span className='text-[#c8a898]'>Venue:</span></p>
+                              <p className='text-[17px] md:text-[20px] px-3'>Vaithilingam Palace A/c Thirumana Mandapam, No.17, Murugan Koil Main Raod, Sammantham Nagar, Kundrathur, Chennai - 600 069.</p>
                           </div>
                           <div className='text-center '>
-                              <a href='tel:8198476272' className='block pt-10 '>+1 234-567-8910</a>
+                              {/* <a href='tel:8198476272' className='block pt-10 '>+1 234-567-8910</a> */}
                               <a href='#' id='location-btn' className='block pt-10 text-[25px] text-[#c8a898] underline underline-offset-8 pb-[10vh]'>QR Code for Location</a>
                               
-                              <img alt='location QR' src='/image/qr.png' className={openQr ? "block mx-auto": "hidden" }></img>
+                              <img alt='location QR' src='/image/qr.png' className={openQr ? "block mx-auto pb-10 md:pb-0": "hidden" }></img>
                           </div>
                       </div>
                   </div>
