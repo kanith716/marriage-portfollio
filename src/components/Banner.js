@@ -4,10 +4,10 @@ import React, { useEffect } from 'react'
 function Banner() {
 
   useEffect(()=> {
-    const targetDate = new Date('February 11, 2024 00:00:00').getTime();
+    const targetDate = new Date('February 28, 2024 00:00:00').getTime();
 
     // Update the countdown every second
-    setInterval(updateCountdown, 1000);
+    setInterval(updateCountdown, 10000);
 
     function updateCountdown() {
       const now = new Date().getTime();

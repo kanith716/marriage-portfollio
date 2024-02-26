@@ -24,6 +24,7 @@
 --black: #000;
 --small-black: #333;
 --cyan: #848892;
+--cart-text:#414141;
 
 --theme-primary-color: #657150;
 --theme-primary-color-s2: #C8A898;
@@ -91,9 +92,18 @@
             background-size: cover;
             
      }
-     /* .clip-img{
-      clip-path: polygon(0 24%, 50% 0, 100% 24%, 100% 76%, 49% 100%, 0 76%);
-     } */
+     .product-banner{
+      background-image: url(../public/image/inner-banner.jpg);
+      background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+     .white-shadow{
+      box-shadow: 0 5px 15px 0 rgba(68, 68, 68, .1);
+     }
+     .error{
+      border: 1px solid #ff0000 !important; 
+     }
      @media (max-width:767px) {
         .round-image {
           height: 220px;

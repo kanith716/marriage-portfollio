@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 function DayCount() {
     useEffect(()=>{
-        var targetDateNew = new Date('February 11, 2024 00:00:00').getTime();
+        var targetDateNew = new Date('February 28, 2024 00:00:00').getTime();
 
         // Update the countdown every second
         setInterval(storyCall, 1000);
